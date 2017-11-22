@@ -47,7 +47,7 @@ public final class BagMod
 
 	@Instance(MODID)
     public static BagMod instance;
-	public static final String MODVERSION = "1.0.0.0";
+	public static final String MODVERSION = "1.0.0.1";
 	public static final String MODNAME = "jtrent238's Bag Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
@@ -98,6 +98,7 @@ public final class BagMod
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		ModRegistry.registerMods();
 		ItemLoader.LoadItems();
 		//BlockLoader.loadBlocks();
 		Recipes.registerRecpies();

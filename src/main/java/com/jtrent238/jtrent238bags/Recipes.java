@@ -35,7 +35,11 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBag, 1, 11), "XXX", "XBX", "XXX", 'X', new ItemStack(Items.dye, 1, 14), 'B', ItemLoader.ItemBag);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBag, 1, 12), "XXX", "XBX", "XXX", 'X', new ItemStack(Items.dye, 1, 15), 'B', ItemLoader.ItemBag);
 
-		
+		if(ModRegistry.isjtrent238youtubersLoaded == true){
+			GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBag, 1, 16), "XXX", "XBX", "XXX", 'X', new ItemStack(com.jtrent238.youtubers.ItemLoader.Itemjtrent238Ingot), 'B', ItemLoader.ItemBag);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBag, 1, 15), "XXX", "XBX", "XXX", 'X', new ItemStack(com.jtrent238.youtubers.ItemLoader.Item_MrGregor_Ingot), 'B', ItemLoader.ItemBag);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBag, 1, 14), "XXX", "XBX", "XXX", 'X', new ItemStack(com.jtrent238.youtubers.ItemLoader.ItemxJSQIngot), 'B', ItemLoader.ItemBag);
+			}
 	}
 	
 	/**

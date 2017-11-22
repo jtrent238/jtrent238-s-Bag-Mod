@@ -21,8 +21,8 @@ import net.minecraft.world.World;
 
 public class ItemBag extends Item
 {
-	public static final String[] field_150923_a = new String[] {"Plain", "red", "green","blue", "purple", "cyan", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white", "Cow", "JSQ", "_MrGregor_", "jtrent238"};
-    public static final String[] field_150921_b = new String[] {"Plain", "red", "green","blue", "purple", "cyan", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white", "Cow", "JSQ", "_MrGregor_", "jtrent238"};
+	public static final String[] field_150923_a = new String[] {"Plain", "red", "green","blue", "purple", "cyan", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white", "Cow", "JSQ", "_MrGregor_", "jtrent238", "banana"};
+    public static final String[] field_150921_b = new String[] {"Plain", "red", "green","blue", "purple", "cyan", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white", "Cow", "JSQ", "_MrGregor_", "jtrent238", "banana"};
     public static final int[] field_150922_c = new int[] {1973019, 11743532, 3887386, 5320730, 2437522, 8073150, 2651799, 11250603, 4408131, 14188952, 4312372, 14602026, 6719955, 12801229, 15435844, 15790320};
     @SideOnly(Side.CLIENT)
     private IIcon[] field_150920_d;
@@ -48,7 +48,7 @@ public class ItemBag extends Item
     public void getSubItems(Item p_150895_1_, CreativeTabs p_150895_2_, List p_150895_3_)
     {
     	//for (int i = 0; i < [AmountOfBags]; ++i)
-        for (int i = 0; i < 17; ++i)
+        for (int i = 0; i < 18; ++i)
         {
             p_150895_3_.add(new ItemStack(p_150895_1_, 1, i));
         }
@@ -60,7 +60,7 @@ public class ItemBag extends Item
      */
     public String getUnlocalizedName(ItemStack p_77667_1_)
     {
-        int i = MathHelper.clamp_int(p_77667_1_.getItemDamage(), 0, 17);
+        int i = MathHelper.clamp_int(p_77667_1_.getItemDamage(), 0, 18);
         return super.getUnlocalizedName() + "." + field_150923_a[i];
     }
 

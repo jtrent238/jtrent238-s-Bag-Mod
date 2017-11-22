@@ -36,8 +36,7 @@ public class OreDict {
 		OreDictionary.registerOre("bag" + ItemBag.field_150923_a[14].toUpperCase(), new ItemStack(ItemLoader.ItemBag, 14));
 		OreDictionary.registerOre("bag" + ItemBag.field_150923_a[15].toUpperCase(), new ItemStack(ItemLoader.ItemBag, 15));
 		OreDictionary.registerOre("bag" + ItemBag.field_150923_a[16].toUpperCase(), new ItemStack(ItemLoader.ItemBag, 16));
-		//OreDictionary.registerOre("bag" + ItemBag.field_150923_a[17],     ItemLoader.ItemBag.getItemById(17));
-
+		OreDictionary.registerOre("bag" + ItemBag.field_150923_a[17].toUpperCase(), new ItemStack(ItemLoader.ItemBag, 18));
 	}
 
 }
